@@ -1,0 +1,33 @@
+{
+  "name": "form-validator",
+  "version": "1.0.0",
+  "description": "A multi-country form validation library supporting phone numbers, postal codes, and national IDs.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node tests/phone-test.js"
+  },
+  "keywords": [
+   "form-validation",
+    "validation",
+    "phone-validation",
+    "postal-code",
+    "national-id",
+    "multi-country",
+    "Iran",
+    "Turkey",
+    "Russia",
+    "China",
+    "USA",
+    "Germany",
+    "France",
+    "UK",
+    "validator",
+    "frontend",
+    "form"
+  ],
+  "author": "Mohammad Halimi",
+  "license": "MIT"
+}
