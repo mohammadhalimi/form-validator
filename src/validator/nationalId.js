@@ -1,13 +1,5 @@
-const nationalIdPatterns = {
-    iran: /^\d{10}$/, // national Id for iranin 10-digit
-    turkey: /^\d{11}$/, // national Id for turkey 11-digit
-    usa: /^[A-Z]{2}\d{7}$/, // national Id for usa i am not sure
-    china: /^[1-9]\d{17}$/, // national Id for china 18-digit
-    russia: /^\d{12}$/, // national Id for russia 12-digit
-    germany: /^\d{11}$/, // national Id for germany 11-digit
-    france: /^[1-9]\d{12}$/, // national Id for france 13-digit
-    uk: /^[A-Z]{2}\d{6}[A-D]$/, // national Id for germany i am not sure
-};
+const nIP = require('../../utils/regexPatterns');
+const nationalIdPatterns = nIP.nationalId;
 
 function validateChineseNationalId(nationalId) {
     if (!/^[1-9]\d{5}(19|20)\d{2}(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])\d{3}[0-9Xx]$/.test(nationalId)) {
