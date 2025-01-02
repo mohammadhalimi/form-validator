@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "node tests/phone-test.js"
+    "testNumberPhone": "node tests/phone-test.js",
+    "testPostalCode": "node tests/postalCode-test.js"
   },
   "keywords": [
    "form-validation",
