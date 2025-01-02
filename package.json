@@ -8,7 +8,8 @@
   },
   "scripts": {
     "testNumberPhone": "node tests/phone-test.js",
-    "testPostalCode": "node tests/postalCode-test.js"
+    "testPostalCode": "node tests/postalCode-test.js",
+    "testNationalId": "node tests/nationalId-test.js"
   },
   "keywords": [
    "form-validation",
