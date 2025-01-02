@@ -15,8 +15,10 @@ function runTests() {
   console.log('Invalid UK phone number:', validatePhone('uk', '0123456789'));  // Expected: false
   console.log('Valid French phone number:', validatePhone('france', '+33 612345678'));  // Expected: true
   console.log('Invalid French phone number:', validatePhone('france', '612345678'));  // Expected: false
-  console.log('Valid German phone number:', validatePhone('germany', '+49 1712345678'));  // Expected: true
-  console.log('Invalid German phone number:', validatePhone('germany', '171234567'));  // Expected: false
+  console.log('Valid German phone number (with country code):', validatePhone('germany', '+49 15712345678'));  // Expected: true
+  console.log('Valid German phone number (without country code):', validatePhone('germany', '015712345678'));  // Expected: true
+  console.log('Invalid German phone number (too short):', validatePhone('germany', '15712345'));  // Expected: false
+  console.log('Invalid German phone number (wrong prefix):', validatePhone('germany', '02712345678'));  // Expected: false  
   console.log('Valid Chinese phone number:', validatePhone('china', '13812345678'));  // Expected: true
   console.log('Invalid Chinese phone number:', validatePhone('china', '13812345'));  // Expected: false
 }
