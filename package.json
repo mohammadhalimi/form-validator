@@ -1,5 +1,5 @@
 {
-  "name": "form-validator",
+  "name": "global-form-validator",
   "version": "1.0.0",
   "description": "A multi-country form validation library supporting phone numbers, postal codes, and national IDs.",
   "main": "index.js",
