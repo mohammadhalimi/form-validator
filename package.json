@@ -1,6 +1,6 @@
 {
   "name": "global-form-validator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A multi-country form validation library supporting phone numbers, postal codes, and national IDs.",
   "main": "index.js",
   "directories": {
@@ -12,7 +12,7 @@
     "testNationalId": "node tests/nationalId-test.js"
   },
   "keywords": [
-   "form-validation",
+    "form-validation",
     "validation",
     "phone-validation",
     "postal-code",
