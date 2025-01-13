@@ -1,6 +1,6 @@
-const phoneValidator = require('./validators/phone');
-const postalCodeValidator = require('./validators/postalCode');
-const nationalIdValidator = require('./validators/nationalId');
+const phoneValidator = require('./src/validators/phone');
+const postalCodeValidator = require('./src/validators/postalCode');
+const nationalIdValidator = require('./src/validators/nationalId');
 
 const { regexPatterns } = require('./utils/regexPatterns');
 const { countryConfigs } = require('./utils/countryConfigs');

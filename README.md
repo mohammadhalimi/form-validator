@@ -42,17 +42,17 @@ const FormComponent = () => {
 
   const handlePhoneChange = (event) => {
     setPhone(event.target.value);
-    setPhoneValid(validatePhone('usa', event.target.value));  // Validate USA phone number
+    setPhoneValid(phoneValidator('usa', event.target.value));  // Validate USA phone number
   };
 
   const handlePostalCodeChange = (event) => {
     setPostalCode(event.target.value);
-    setPostalCodeValid(validatePostalCode('usa', event.target.value));  // Validate USA postal code
+    setPostalCodeValid(postalCodeValidator('usa', event.target.value));  // Validate USA postal code
   };
 
   const handleNationalIdChange = (event) => {
     setNationalId(event.target.value);
-    setNationalIdValid(validateNationalId('iran', event.target.value));  // Validate Iranian national ID
+    setNationalIdValid(nationalIdValidator('iran', event.target.value));  // Validate Iranian national ID
   };
 
   return (
